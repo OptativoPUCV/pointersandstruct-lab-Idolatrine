@@ -58,3 +58,9 @@ Sun Mar 21 08:22:33 UTC 2021:
  tests:  3|4
 total_score: 30/70
 bae626c
+Mon Mar 22 20:40:26 UTC 2021: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+8648e29
