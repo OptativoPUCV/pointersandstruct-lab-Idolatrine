@@ -96,7 +96,7 @@ Vector * crearVector(int n) {
    
    for(int f=0;f<n;f++){
 
-     v[f].capacidad=0;
+     v[f].capacidad=n;
 
    }
    
