@@ -129,6 +129,7 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
+ 
   for(int y=0; y<a->capacidad;y++){
     c->datos[y]=a->datos[y]+b->datos[y];
   }
@@ -142,8 +143,20 @@ Use las operaciones implementadas de vectores para
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-
-
+  Vector * p = (Vector*)malloc(sizeof(Vector));
+    p->datos = (int *)calloc(2, sizeof(int));
+    p->capacidad = 2;
+  
+    p->datos[0]=a1;
+    p->datos[1]=a2;  
+  
+  Vector * q = (Vector*)malloc(sizeof(Vector));
+    q->datos = (int *)calloc(2, sizeof(int));
+    q->capacidad = 2;
+  
+    q->datos[0]=b1;
+    q->datos[1]=b2;
+    sumaV(p,q,c);
 
 
 }
