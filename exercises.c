@@ -91,7 +91,11 @@ typedef struct {
 
 Vector * crearVector(int n) {
    Vector* v=(Vector*)calloc(n,sizeof(Vector));
+   for(int f=0;f<n;f++){
+     v[f].capacidad=n;
 
+
+   } 
    return v;
 }
 
